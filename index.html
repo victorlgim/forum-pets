@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petinfo - Login</title>
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <script defer type="module" src="./login.js"></script>
+  </head>
+  <body>
+    <div class="modal-loading hidden">
+      <div class="spinner">
+        <div class="loading"></div>
+        <p class="loading-msg">LOADING</p>
+      </div>
+    </div>
+    <main class="container">
+      <div class="section-main">
+        <section class="description">
+          <h1>Petinfo</h1>
+          <h2>
+            <strong class="edit-strong">Amor</strong> e
+            <strong class="edit-strong">carinho</strong> por meio do
+            conhecimento
+          </h2>
+          <p>
+            Todas as informações para melhorar a vida do seu pet em um só lugar
+          </p>
+          <div class="div-top-header">
+            <div class="image-top-header">
+              <div class="img-header">
+                <img src="./assets/1.png" id="img-1" alt="" />
+                <img src="./assets/2.png" id="img-2" alt="" />
+              </div>
+              <img src="./assets/3.png" id="img-3" alt="" />
+            </div>
+            <img src="./assets/4.png" id="img-4" alt="" />
+          </div>
+        </section>
+        <section class="login">
+          <div class="container-login">
+            <h2>Login</h2>
+            <form class="form-principal">
+              <div class="username-div">
+                <label for="username">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="Digite seu email aqui..."
+                />
+              </div>
+              <div class="password-div">
+                <label for="password">Senha</label>
+                <input
+                  type="password"
+                  id="password"
+                  required
+                  placeholder="••••••••••"
+                />
+              </div>
+              <span class="msg-error hidden">A senha está incorreta</span>
+              <button class="btn-acess">Acessar</button>
+            </form>
+            <small>Ainda não possui conta?</small>
+            <p>Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
+            <button class="btn-register">Cadastrar</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
