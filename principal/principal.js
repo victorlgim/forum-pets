@@ -16,6 +16,7 @@ function render(arr) {
       const li = renderLis(e, arr);
       ul.appendChild(li);
     } else {
+        console.log('adsdsa')
       const li = cardsLogOut(e, arr);
       ul.appendChild(li);
     }
@@ -29,7 +30,10 @@ async function requestPosts() {
   render(searchPosts);
 }
 
-requestPosts();
+setTimeout(() => {
+
+    requestPosts();
+}, 300)
 
 function renderLis(post, arr) {
   const li = document.createElement("li");
@@ -363,6 +367,7 @@ function exitAccount() {
     btnModal.classList.remove("hidden");
     setTimeout(() => {
       localStorage.removeItem("token");
+      localStorage.removeItem('id')
       window.location.replace("../index.html");
     }, 2000);
   });
@@ -415,7 +420,7 @@ function editModal() {
       btnModal.classList.add('hidden')
     }, 1000);
 
-    
+
   });
 }
 
