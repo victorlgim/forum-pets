@@ -17,6 +17,8 @@ entryRegister();
 
 async function entryPrincipal() {
   const formButton = document.querySelector(".form-principal");
+  
+
   const elements = [...formButton]
   
   formButton.addEventListener("submit", async event => {
@@ -29,6 +31,8 @@ async function entryPrincipal() {
         body[e.id] = e.value;
       }
     });
+
+
 
     
     login(body)

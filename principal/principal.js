@@ -337,6 +337,8 @@ function toggleModalPublish() {
   const h2publish = document.querySelector(".h2-publish");
   const p = document.querySelector(".paragraph-publish");
 
+  
+
   btns.forEach(e => {
     e.addEventListener("click", event => {
       const filterData = arr.filter(ez => {
@@ -471,3 +473,10 @@ function deleteModal() {
 }
 
 deleteModal();
+
+const paragraphli = document.querySelectorAll('.paragraph-li')
+paragraphli.forEach(e => {
+  if (e.innerText.length > 145) {
+    e.innerText = e.innerText.substring(0, 145) + '...'
+  }
+})
