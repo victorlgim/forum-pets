@@ -480,3 +480,12 @@ paragraphli.forEach(e => {
     e.innerText = e.innerText.substring(0, 145) + '...'
   }
 })
+
+function verifyLogin() {
+  const images = document.querySelector('.avatar')
+  if (images.alt == 'undefined') {
+    window.location.replace('../index.html')
+  }
+}
+
+verifyLogin()
