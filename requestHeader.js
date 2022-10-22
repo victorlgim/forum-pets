@@ -98,7 +98,14 @@ async function search (token) {
 
             }, 
         })
-        return request.json()
+        if (request.ok) {
+         
+          return request.json()
+        } else {
+            window.location.replace('../index.html')
+        }
+        
+        
     } catch (err) {
         console.log(err)
     }
